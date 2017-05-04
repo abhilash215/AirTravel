@@ -6,10 +6,6 @@ public class MappingCodes {
     private static Hashtable<String, String> htAirlineCodes = new Hashtable<String, String>();
     private static Hashtable<String, String> htSrcDest = new Hashtable<String, String>();
 
-    private MappingCodes() {
-
-    }
-
     public static String getAirlineMap(String airlinecode) {
         if (htAirlineCodes.size() == 0)
             LoadAirlineMap();
